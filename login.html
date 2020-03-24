@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="fav/favicon.ico" />
+    <title>E-soap</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <a class="head-description" href="main.html">E-soap</a>
+    </header>
+    <article class="description">
+      E-soap - это почтовый сервис который позволит вам общаться с друзьями из
+      любой точки мира. А так же позволит использовать учетную запись для
+      регистрации на любых сервисах в инетернете таких как Вконтакте, Instagram,
+      Facebook и др.
+    </article>
+    <form action="php/login.php" class="form-head" method="POST">
+      <h3>Войти на сайт</h3>
+      <div class="form-row">
+        <input
+          type="text"
+          id="login"
+          name="login"
+          required
+          autocomplete="off"
+        /><label for="login">Логин</label>
+      </div>
+      <div class="form-row">
+        <input
+          type="password"
+          id="password"
+          required
+          autocomplete="off"
+        /><label for="password">Пароль</label>
+      </div>
+      <p>
+        <input class="sub-res" type="submit" name="do_login" value="Войти" />
+      </p>
+      <a href="registration.html" class="link-footer sub">Зарегистрироваться</a>
+    </form>
+    <div
+      id="footer_wrapper"
+      style="position: absolute;
+    bottom: 0;
+    width: 100%;"
+    >
+      <footer class="footer">
+        <ul class="footer-description">
+          <li class="list-item"><a href="#" class="link-footer">О нас</a></li>
+          <li class="list-item">
+            <a href="#" class="link-footer">Поддержать проект</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link-footer">Правила пользования</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="link-footer">Политика конфедициальности</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
